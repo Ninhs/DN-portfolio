@@ -49,7 +49,7 @@
         <!-- About -->
          <section id="about">
             <div class="ab_img">
-                <img src="/Img/about/ab_img.jpg">
+                <img src="Img/about/ab_img.jpg">
             </div>
             <div class="ab_content">
                 <h1 class="lato-regular-italic">About</h1>
@@ -191,12 +191,12 @@
                 </div>
                 
                 <div class="send">
-                    <form>
-                        <input type="text" placeholder="Your Name">
-                        <input type="text" placeholder="Your E-mail">
-                        <input type="text" placeholder="Subject">
-                        <textarea name="" id="" cols="30" row="10" placeholder="Your Messages"></textarea>
-                        <button type="button" class="normal">Send Messages</button>
+                    <form action="https://formspree.io/f/mrblpzyp" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your E-mail" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="messega" id="" cols="30" rows="5" placeholder="Your Messages" required></textarea>
+                        <button id="submitBtn" type="submit" class="normal">Send Messages</button>
                     </form>
                 </div>
             </div>

@@ -20,3 +20,10 @@ window.addEventListener("scroll", () => {
       }
     });
 });
+
+// Send a footer end
+const button = document.getElementById("submitBtn");
+
+button.addEventListener("click", function () {
+    aler("Bạn đã gửi phản hồi!");
+});
